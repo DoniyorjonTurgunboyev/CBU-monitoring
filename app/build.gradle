@@ -49,4 +49,5 @@ dependencies {
     //Chart
     implementation 'com.github.makstron:TCharts:0.9'
     implementation 'com.github.PhilJay:MPAndroidChart:3.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
 }

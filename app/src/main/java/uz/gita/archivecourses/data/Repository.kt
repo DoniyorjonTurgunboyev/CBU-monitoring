@@ -1,5 +1,6 @@
 package uz.gita.archivecourses.data
 
+import android.util.Log
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -26,6 +27,7 @@ class Repository {
 //                    val courseEntity = CourseEntity(0, a.Ccy, a.CcyNm_EN, a.CcyNm_RU, a.CcyNm_UZ, a.CcyNm_UZC, a.Code, a.Date, a.Diff, a.Nominal, a.Rate)
 //                    courseDao.insert(courseEntity)
 //                }
+                Log.d("YYY", "onResponse: ${response.body()}")
                 listener.invoke(response.body()!!)
             }
 
